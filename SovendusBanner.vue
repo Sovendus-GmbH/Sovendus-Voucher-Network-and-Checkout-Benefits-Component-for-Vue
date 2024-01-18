@@ -63,7 +63,8 @@ const init = async () => {
     orderValue: orderValue.value,
     orderCurrency: orderCurrency.value,
     usedCouponCode: usedCouponCode.value,
-    iframeContainerId: sovDivId
+    iframeContainerId: sovDivId,
+    integrationType: "vue-1.0.1"
   })
   window.sovConsumer = {
     consumerSalutation: consumerSalutation.value,
@@ -88,5 +89,5 @@ init()
 </script>
 
 <template>
-  <div version="Sovendus Vue 1.0.0" :id="sovDivId"></div>
+  <div :id="sovDivId"></div>
 </template>
