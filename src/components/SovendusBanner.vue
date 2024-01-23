@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { toRefs } from 'vue'
 
-const props = defineProps<{
+export interface Props {
   trafficSourceNumber: number
   trafficMediumNumber: number
   sessionId: string
@@ -20,7 +20,9 @@ const props = defineProps<{
   consumerCountry?: string
   consumerZipcode?: string
   consumerYearOfBirth?: number
-}>()
+}
+
+const props = defineProps<Props>()
 const {
   trafficSourceNumber,
   trafficMediumNumber,
@@ -64,7 +66,7 @@ const init = async () => {
     orderCurrency: orderCurrency.value,
     usedCouponCode: usedCouponCode.value,
     iframeContainerId: sovDivId,
-    integrationType: "vue-1.0.1"
+    integrationType: "vue-1.0.4"
   })
   window.sovConsumer = {
     consumerSalutation: consumerSalutation.value,
