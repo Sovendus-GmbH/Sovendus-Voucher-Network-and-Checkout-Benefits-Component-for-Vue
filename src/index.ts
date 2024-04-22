@@ -1,5 +1,4 @@
-import SovendusBanner from './components/SovendusBanner.vue'
+import SovendusBanner from "./components/SovendusBanner.vue";
+import SovendusLandingPage from "./components/SovendusLandingPage.vue";
 
-export {
-    SovendusBanner
-}
+export { SovendusBanner, SovendusLandingPage };
