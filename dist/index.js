@@ -55,7 +55,7 @@ const x = /* @__PURE__ */ h({
         orderCurrency: i.value,
         usedCouponCode: d.value,
         iframeContainerId: r,
-        integrationType: "vue-1.0.4"
+        integrationType: "vue-1.0.7"
       }), window.sovConsumer = {
         consumerSalutation: v.value,
         consumerFirstName: l.value,

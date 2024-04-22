@@ -66,7 +66,7 @@ const init = async () => {
     orderCurrency: orderCurrency.value,
     usedCouponCode: usedCouponCode.value,
     iframeContainerId: sovDivId,
-    integrationType: "vue-1.0.4"
+    integrationType: "vue-1.0.7"
   })
   window.sovConsumer = {
     consumerSalutation: consumerSalutation.value,
