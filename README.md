@@ -1,10 +1,6 @@
 # Sovendus Voucher Network & Checkout Benefits Component for Vue
 
-## Install manually
-
-Download the Sovendus component from [here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Component-for-Vue/main/src/components/SovendusBanner.vue) and paste it into your Vue project / components folder
-
-## Install through npmjs
+## Install through npm
 
 Execute the following command to install it through npm:
 
