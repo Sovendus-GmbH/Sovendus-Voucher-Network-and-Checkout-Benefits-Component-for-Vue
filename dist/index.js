@@ -31,16 +31,16 @@ const x = /* @__PURE__ */ h({
       orderValue: c,
       orderCurrency: i,
       usedCouponCode: d,
-      consumerSalutation: l,
-      consumerFirstName: v,
+      consumerSalutation: v,
+      consumerFirstName: l,
       consumerLastName: p,
       consumerEmail: f,
       consumerStreet: C,
       consumerStreetNumber: y,
-      consumerCity: w,
-      consumerCountry: N,
-      consumerZipcode: b,
-      consumerYearOfBirth: I
+      consumerCity: N,
+      consumerCountry: b,
+      consumerZipcode: I,
+      consumerYearOfBirth: S
     } = g(n);
     window.sovDivId = 1 + (window.sovDivId || 0);
     const r = `sovendus-integration-container-${window.sovDivId}`;
@@ -57,24 +57,24 @@ const x = /* @__PURE__ */ h({
         iframeContainerId: r,
         integrationType: "vue-1.0.4"
       }), window.sovConsumer = {
-        consumerSalutation: l.value,
-        consumerFirstName: v.value,
+        consumerSalutation: v.value,
+        consumerFirstName: l.value,
         consumerLastName: p.value,
         consumerEmail: f.value,
         consumerStreet: C.value,
         consumerStreetNumber: y.value,
-        consumerCity: w.value,
-        consumerCountry: N.value,
-        consumerZipcode: b.value,
-        consumerYearOfBirth: I.value
+        consumerCity: N.value,
+        consumerCountry: b.value,
+        consumerZipcode: I.value,
+        consumerYearOfBirth: S.value
       };
       const o = document.createElement("script");
       o.async = !0, o.src = "https://api.sovendus.com/sovabo/common/js/flexibleIframe.js", o.type = "text/javascript", document.getElementsByTagName("body")[0].appendChild(o);
-    })(), (o, S) => (B(), E("div", { id: r }));
+    })(), (o, w) => (B(), E("div", { id: r }));
   }
 }), D = {
   mounted() {
-    if (["CH", void 0].includes(document.documentElement.lang.split("-")[1]) && window.location.pathname === "/") {
+    if (["CH", void 0].includes(document.documentElement.lang.split("-")[1])) {
       var e = document.createElement("script");
       e.type = "text/javascript", e.async = !0, e.src = "https://api.sovendus.com/js/landing.js", document.body.appendChild(e);
     }

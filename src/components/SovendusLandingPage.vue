@@ -4,8 +4,7 @@ export interface Props {}
 export default {
   mounted() {
     if (
-      ["CH", undefined].includes(document.documentElement.lang.split("-")[1]) &&
-      window.location.pathname === "/"
+      ["CH", undefined].includes(document.documentElement.lang.split("-")[1])
     ) {
       var script = document.createElement("script");
       script.type = "text/javascript";
