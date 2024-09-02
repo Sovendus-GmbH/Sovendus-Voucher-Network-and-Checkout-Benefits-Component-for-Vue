@@ -12,7 +12,7 @@ npm install --save sovendus-voucher-network-and-checkout-benefits-vue
 
 You can then use the component as with the following example on your order success / thank you page:
 
-[Information about the Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
+[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
 
 ```vue
 <SovendusBanner
