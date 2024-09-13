@@ -1,11 +1,11 @@
 export interface Props {
     trafficSourceNumber: number;
     trafficMediumNumber: number;
-    sessionId: string;
-    timestamp: number;
-    orderId: string;
-    orderValue: number;
-    orderCurrency: string;
+    sessionId?: string;
+    timestamp?: number;
+    orderId?: string;
+    orderValue?: number;
+    orderCurrency?: string;
     usedCouponCode?: string;
     consumerSalutation?: string;
     consumerFirstName?: string;
@@ -17,6 +17,7 @@ export interface Props {
     consumerCountry?: string;
     consumerZipcode?: string;
     consumerYearOfBirth?: number;
+    consumerDateOfBirth?: string;
 }
 declare const _default: import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<Props>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<Props>>>, {}, {}>;
 export default _default;

@@ -4,11 +4,11 @@ import { toRefs } from 'vue'
 export interface Props {
   trafficSourceNumber: number
   trafficMediumNumber: number
-  sessionId: string
-  timestamp: number
-  orderId: string
-  orderValue: number
-  orderCurrency: string
+  sessionId?: string
+  timestamp?: number
+  orderId?: string
+  orderValue?: number
+  orderCurrency?: string
   usedCouponCode?: string
   consumerSalutation?: string
   consumerFirstName?: string
@@ -20,6 +20,7 @@ export interface Props {
   consumerCountry?: string
   consumerZipcode?: string
   consumerYearOfBirth?: number
+  consumerDateOfBirth?: string
 }
 
 const props = defineProps<Props>()
@@ -41,7 +42,8 @@ const {
   consumerCity,
   consumerCountry,
   consumerZipcode,
-  consumerYearOfBirth
+  consumerYearOfBirth,
+  consumerDateOfBirth
 } = toRefs(props)
 
 interface SovWindow extends Window {
@@ -66,7 +68,7 @@ const init = async () => {
     orderCurrency: orderCurrency.value,
     usedCouponCode: usedCouponCode.value,
     iframeContainerId: sovDivId,
-    integrationType: "vue-1.0.7"
+    integrationType: "vue-1.0.8"
   })
   window.sovConsumer = {
     consumerSalutation: consumerSalutation.value,
@@ -78,7 +80,8 @@ const init = async () => {
     consumerCity: consumerCity.value,
     consumerCountry: consumerCountry.value,
     consumerZipcode: consumerZipcode.value,
-    consumerYearOfBirth: consumerYearOfBirth.value
+    consumerYearOfBirth: consumerYearOfBirth.value,
+    consumerDateOfBirth: consumerDateOfBirth.value
   }
   const script = document.createElement('script')
   script.async = true

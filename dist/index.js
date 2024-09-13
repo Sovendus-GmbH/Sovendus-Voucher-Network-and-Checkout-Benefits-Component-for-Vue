@@ -1,5 +1,5 @@
-import { defineComponent as h, toRefs as g, openBlock as B, createElementBlock as E } from "vue";
-const x = /* @__PURE__ */ h({
+import { defineComponent as B, toRefs as g, openBlock as E, createElementBlock as _ } from "vue";
+const O = /* @__PURE__ */ B({
   __name: "SovendusBanner",
   props: {
     trafficSourceNumber: {},
@@ -19,7 +19,8 @@ const x = /* @__PURE__ */ h({
     consumerCity: {},
     consumerCountry: {},
     consumerZipcode: {},
-    consumerYearOfBirth: {}
+    consumerYearOfBirth: {},
+    consumerDateOfBirth: {}
   },
   setup(e) {
     const n = e, {
@@ -40,7 +41,8 @@ const x = /* @__PURE__ */ h({
       consumerCity: N,
       consumerCountry: b,
       consumerZipcode: I,
-      consumerYearOfBirth: S
+      consumerYearOfBirth: S,
+      consumerDateOfBirth: w
     } = g(n);
     window.sovDivId = 1 + (window.sovDivId || 0);
     const r = `sovendus-integration-container-${window.sovDivId}`;
@@ -55,7 +57,7 @@ const x = /* @__PURE__ */ h({
         orderCurrency: i.value,
         usedCouponCode: d.value,
         iframeContainerId: r,
-        integrationType: "vue-1.0.7"
+        integrationType: "vue-1.0.8"
       }), window.sovConsumer = {
         consumerSalutation: v.value,
         consumerFirstName: l.value,
@@ -66,13 +68,14 @@ const x = /* @__PURE__ */ h({
         consumerCity: N.value,
         consumerCountry: b.value,
         consumerZipcode: I.value,
-        consumerYearOfBirth: S.value
+        consumerYearOfBirth: S.value,
+        consumerDateOfBirth: w.value
       };
       const o = document.createElement("script");
       o.async = !0, o.src = "https://api.sovendus.com/sovabo/common/js/flexibleIframe.js", o.type = "text/javascript", document.getElementsByTagName("body")[0].appendChild(o);
-    })(), (o, w) => (B(), E("div", { id: r }));
+    })(), (o, h) => (E(), _("div", { id: r }));
   }
-}), D = {
+}), x = {
   mounted() {
     if (["CH", void 0].includes(document.documentElement.lang.split("-")[1])) {
       var e = document.createElement("script");
@@ -81,6 +84,6 @@ const x = /* @__PURE__ */ h({
   }
 };
 export {
-  x as SovendusBanner,
-  D as SovendusLandingPage
+  O as SovendusBanner,
+  x as SovendusLandingPage
 };
