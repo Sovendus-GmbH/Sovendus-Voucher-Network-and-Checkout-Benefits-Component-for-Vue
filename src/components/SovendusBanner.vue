@@ -14,6 +14,7 @@ export interface Props {
   consumerFirstName?: string
   consumerLastName?: string
   consumerEmail?: string
+  consumerPhone?: string
   consumerStreet?: string
   consumerStreetNumber?: string
   consumerCity?: string
@@ -37,6 +38,7 @@ const {
   consumerFirstName,
   consumerLastName,
   consumerEmail,
+  consumerPhone,
   consumerStreet,
   consumerStreetNumber,
   consumerCity,
@@ -68,13 +70,14 @@ const init = async () => {
     orderCurrency: orderCurrency.value,
     usedCouponCode: usedCouponCode.value,
     iframeContainerId: sovDivId,
-    integrationType: "vue-1.0.8"
+    integrationType: "vue-1.0.9"
   })
   window.sovConsumer = {
     consumerSalutation: consumerSalutation.value,
     consumerFirstName: consumerFirstName.value,
     consumerLastName: consumerLastName.value,
     consumerEmail: consumerEmail.value,
+    consumerPhone: consumerPhone.value,
     consumerStreet: consumerStreet.value,
     consumerStreetNumber: consumerStreetNumber.value,
     consumerCity: consumerCity.value,

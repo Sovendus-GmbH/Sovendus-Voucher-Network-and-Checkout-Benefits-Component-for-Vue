@@ -11,6 +11,7 @@ export interface Props {
     consumerFirstName?: string;
     consumerLastName?: string;
     consumerEmail?: string;
+    consumerPhone?: string;
     consumerStreet?: string;
     consumerStreetNumber?: string;
     consumerCity?: string;

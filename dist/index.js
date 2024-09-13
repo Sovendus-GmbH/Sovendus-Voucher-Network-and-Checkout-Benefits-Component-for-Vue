@@ -1,5 +1,5 @@
-import { defineComponent as B, toRefs as g, openBlock as E, createElementBlock as _ } from "vue";
-const O = /* @__PURE__ */ B({
+import { defineComponent as g, toRefs as E, openBlock as _, createElementBlock as D } from "vue";
+const x = /* @__PURE__ */ g({
   __name: "SovendusBanner",
   props: {
     trafficSourceNumber: {},
@@ -14,6 +14,7 @@ const O = /* @__PURE__ */ B({
     consumerFirstName: {},
     consumerLastName: {},
     consumerEmail: {},
+    consumerPhone: {},
     consumerStreet: {},
     consumerStreetNumber: {},
     consumerCity: {},
@@ -36,14 +37,15 @@ const O = /* @__PURE__ */ B({
       consumerFirstName: l,
       consumerLastName: p,
       consumerEmail: f,
-      consumerStreet: C,
-      consumerStreetNumber: y,
-      consumerCity: N,
-      consumerCountry: b,
+      consumerPhone: C,
+      consumerStreet: y,
+      consumerStreetNumber: N,
+      consumerCity: b,
+      consumerCountry: h,
       consumerZipcode: I,
       consumerYearOfBirth: S,
       consumerDateOfBirth: w
-    } = g(n);
+    } = E(n);
     window.sovDivId = 1 + (window.sovDivId || 0);
     const r = `sovendus-integration-container-${window.sovDivId}`;
     return (async () => {
@@ -57,25 +59,26 @@ const O = /* @__PURE__ */ B({
         orderCurrency: i.value,
         usedCouponCode: d.value,
         iframeContainerId: r,
-        integrationType: "vue-1.0.8"
+        integrationType: "vue-1.0.9"
       }), window.sovConsumer = {
         consumerSalutation: v.value,
         consumerFirstName: l.value,
         consumerLastName: p.value,
         consumerEmail: f.value,
-        consumerStreet: C.value,
-        consumerStreetNumber: y.value,
-        consumerCity: N.value,
-        consumerCountry: b.value,
+        consumerPhone: C.value,
+        consumerStreet: y.value,
+        consumerStreetNumber: N.value,
+        consumerCity: b.value,
+        consumerCountry: h.value,
         consumerZipcode: I.value,
         consumerYearOfBirth: S.value,
         consumerDateOfBirth: w.value
       };
       const o = document.createElement("script");
       o.async = !0, o.src = "https://api.sovendus.com/sovabo/common/js/flexibleIframe.js", o.type = "text/javascript", document.getElementsByTagName("body")[0].appendChild(o);
-    })(), (o, h) => (E(), _("div", { id: r }));
+    })(), (o, B) => (_(), D("div", { id: r }));
   }
-}), x = {
+}), L = {
   mounted() {
     if (["CH", void 0].includes(document.documentElement.lang.split("-")[1])) {
       var e = document.createElement("script");
@@ -84,6 +87,6 @@ const O = /* @__PURE__ */ B({
   }
 };
 export {
-  O as SovendusBanner,
-  x as SovendusLandingPage
+  x as SovendusBanner,
+  L as SovendusLandingPage
 };
