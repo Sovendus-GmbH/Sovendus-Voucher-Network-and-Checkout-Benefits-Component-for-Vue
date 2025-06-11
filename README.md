@@ -45,7 +45,7 @@ You can then use the component as with the following example on your order succe
 
 ### Additional steps for Switzerland
 
-For Switzerland it is also required to add the following component on the home page / page where users will land coming from the Sovendus Voucher Network
+For Switzerland it is also required to add the following component on the home page / page where users will land coming from the Sovendus Voucher Network.
 
 ```vue
 <SovendusLandingPage />
