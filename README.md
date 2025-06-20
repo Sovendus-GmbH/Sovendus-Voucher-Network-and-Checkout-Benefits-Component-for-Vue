@@ -4,7 +4,7 @@
 > **Disclaimer**
 > This component is released as open source under the GPL v3 license. We welcome bug reports and pull requests from the community. However, please note that the component is provided "as is" without any warranties or guarantees. It may not be compatible with all other plugins and could potentially cause issues with your store. We strongly recommend that you test the plugin thoroughly in a staging environment before deploying it to a live site. Furthermore, we do not promise future support or updates and reserve the right to discontinue support for the component at any time.
 
-## Install through npm
+## 📦 Install through npm
 
 Execute the following command to install it through npm:
 
@@ -12,7 +12,7 @@ Execute the following command to install it through npm:
 npm install --save sovendus-voucher-network-and-checkout-benefits-vue
 ```
 
-## Integrate into your Vue app
+## 🔗 Integrate into your Vue app
 
 You can then use the component as with the following example on your order success / thank you page:
 
@@ -43,7 +43,7 @@ You can then use the component as with the following example on your order succe
 />
 ```
 
-### Additional steps for Switzerland
+### 🇨🇭 Additional steps for Switzerland
 
 For Switzerland it is also required to add the following component on the home page / page where users will land coming from the Sovendus Voucher Network.
 
